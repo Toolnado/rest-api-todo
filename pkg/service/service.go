@@ -1,8 +1,12 @@
 package service
 
-import "github.com/toolnado/rest-todo-app/pkg/repository"
+import (
+	todo "github.com/toolnado/rest-todo-app"
+	"github.com/toolnado/rest-todo-app/pkg/repository"
+)
 
 type Authorization interface {
+	CreateUser(user todo.User) (int, error)
 }
 
 type TodoList interface {
@@ -18,5 +22,7 @@ type Service struct {
 }
 
 func NewService(r *repository.Repository) *Service {
-	return &Service{}
+	return &Service{
+		Authorization: NewAuthService(r.Authorization),
+	}
 }
