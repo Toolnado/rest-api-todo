@@ -9,7 +9,7 @@ import (
 	"github.com/dgrijalva/jwt-go"
 
 	todo "github.com/toolnado/rest-todo-app"
-	"github.com/toolnado/rest-todo-app/pkg/repository"
+	"github.com/toolnado/rest-todo-app/internal/repository"
 )
 
 const (
