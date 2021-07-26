@@ -7,9 +7,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 	todo "github.com/toolnado/rest-todo-app"
-	"github.com/toolnado/rest-todo-app/pkg/handler"
-	"github.com/toolnado/rest-todo-app/pkg/repository"
-	"github.com/toolnado/rest-todo-app/pkg/service"
+	"github.com/toolnado/rest-todo-app/internal/handler"
+	"github.com/toolnado/rest-todo-app/internal/repository"
+	"github.com/toolnado/rest-todo-app/internal/service"
 )
 
 func main() {
